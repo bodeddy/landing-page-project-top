@@ -14,13 +14,10 @@ header, .hero, footer {
     background-color: #1F2937;
 }
 
-header, .hero {
-    padding: 0 40px;
-}
-
 header {
     justify-content: space-between;
     align-items: center;
+    padding: 0 250px;
 }
 
 .header-logo {
@@ -40,7 +37,26 @@ a {
     color: white;
 }
 
-.hero-text, a {
+.hero {
+    justify-content: space-between;
+    padding: 100px 250px;
+    gap: 50px;
+}
+
+.hero-text-button {
+    width: 400px;
+}
+
+.hero-text {
+    margin: 10px 0;
+}
+
+.hero-button {
+    border: none;
+    flex-basis: auto;
+}
+
+.hero-text, a, button {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -97,6 +113,12 @@ h2 {
     margin: 0;
 }
 
+.quotee {
+    align-self: flex-end;
+    font-weight: 800;
+    font-size: 18px;
+}
+
 footer {
     justify-content: center;
     align-items: center;
@@ -104,16 +126,39 @@ footer {
 }
 
 .cta {
-    justify-content: center;
+    justify-content: space-between;
     background-color: #3882F6;
-    margin: 40px 100px;
+    margin: 80px 250px;
+    padding: 40px 150px;
+    border-radius: 10px;
 }
 
 .cta-text {
     display: flex;
     flex-direction: column;
+    color: #F9FAF8;
+}
+
+.cta-title, .cta-subtext {
+    margin: 0;
+}
+
+.cta-title {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 button {
     background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 0 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    min-height: 50px;
+    min-width: 68px;
+    flex-grow: 0;
+}
+
+.cta-button {
+    border: 2pt solid #F9FAF8;
 }
