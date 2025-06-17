@@ -19,14 +19,20 @@ header, .hero, footer {
     background-color: #1F2937;
 }
 
-.hero-text, a, button {
-    font-size: 18px;
+.hero-text, a, button, footer {
     color: #E5E7EB;
+}
+
+.header-logo, h1, .cta-text, button {
+    color: #F9FAF8;
+}
+
+.hero-text, a, button, .quotee {
+    font-size: 18px;
 }
 
 button {
     background-color: #3882F6;
-    color: #F9FAF8;
     padding: 0 40px;
     font-weight: 600;
     border-radius: 10px;
@@ -46,7 +52,6 @@ header {
 
 .header-logo {
     font-size: 24px;
-    color: #F9FAF8;
 }
 
 ul {
@@ -66,7 +71,6 @@ a {
 
 H1 {
     font-size: 48px;
-    color: #F9FAF8;
     font-weight: 900;
     margin: 0;
 }
@@ -146,7 +150,6 @@ h2 {
 .quotee {
     align-self: flex-end;
     font-weight: 800;
-    font-size: 18px;
 }
 
 
@@ -163,7 +166,6 @@ h2 {
 .cta-text {
     display: flex;
     flex-direction: column;
-    color: #F9FAF8;
 }
 
 .cta-title, .cta-subtext {
@@ -185,7 +187,6 @@ h2 {
 footer {
     justify-content: center;
     align-items: center;
-    color: #E5E7EB;
 }
 
 
