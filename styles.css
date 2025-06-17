@@ -1,3 +1,8 @@
+/* Very partially inspired by https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
+
+
+/* || Shared styles */
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -13,6 +18,25 @@ header, .hero, .content, .content-images, .content-image, .quote, .cta, footer {
 header, .hero, footer {
     background-color: #1F2937;
 }
+
+.hero-text, a, button {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 0 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    min-height: 50px;
+    min-width: 68px;
+    flex-grow: 0;
+}
+
+
+/* || Header */
 
 header {
     justify-content: space-between;
@@ -37,6 +61,16 @@ a {
     color: white;
 }
 
+
+/* || Hero */
+
+H1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0;
+}
+
 .hero {
     justify-content: space-between;
     padding: 100px 250px;
@@ -56,28 +90,19 @@ a {
     flex-basis: auto;
 }
 
-.hero-text, a, button {
-    font-size: 18px;
-    color: #E5E7EB;
-}
 
-H1 {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-    margin: 0;
-}
-
-.content {
-    flex-direction: column;
-    padding-bottom: 120px;
-}
+/* || Content */
 
 h2 {
     text-align: center;
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+}
+
+.content {
+    flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .content-images {
@@ -93,11 +118,16 @@ h2 {
 .content-image {
     border: 5px solid #3882F6;
     border-radius: 10%;
+    height: auto; 
+    width: 200px;
 }
 
 .content-text {
     text-align: center;
 }
+
+
+/* || Quote */
 
 .quote {
     flex-direction: column;
@@ -119,11 +149,8 @@ h2 {
     font-size: 18px;
 }
 
-footer {
-    justify-content: center;
-    align-items: center;
-    color: #E5E7EB;
-}
+
+/* || CTA */
 
 .cta {
     justify-content: space-between;
@@ -148,17 +175,17 @@ footer {
     font-weight: 600;
 }
 
-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    padding: 0 40px;
-    font-weight: 600;
-    border-radius: 10px;
-    min-height: 50px;
-    min-width: 68px;
-    flex-grow: 0;
-}
-
 .cta-button {
     border: 2pt solid #F9FAF8;
 }
+
+
+/* || Footer */
+
+footer {
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+}
+
+
