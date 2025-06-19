@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
 }
 
-header, .hero, .content, .content-images, .content-image, .quote, .cta, footer {
+header, .header-content, .hero, .content, .content-images, .content-image, .quote, .cta, footer {
     display: flex;
     margin: 0;
     padding: 0;
@@ -48,9 +48,14 @@ button {
 /* || Header */
 
 header {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    width: 1100px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 250px;
 }
 
 .header-logo {
