@@ -1,5 +1,6 @@
 /* Very partially inspired by https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
 
+/* SOLUTION: I figured out that the issue was the padding, but I will leave the comment below in as a reminder. Fixed everything by removing padding, adding extra divs, and specifying height and width. */
 /* Note: the biggest issue is that the padding on the header, hero and cta are not shrinking when resizing. I know why. Flex-shrink only works with negative space, and I'm assuming padding isn't negative space. I have not idea at this point how to align the header, hero and cta (like they're aligned within 01.png) without using padding. Maybe something to revisit one day. */
 
 
