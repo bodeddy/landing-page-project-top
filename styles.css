@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
 }
 
-header, .header-content, .hero, .content, .content-images, .content-image, .quote, .cta, footer {
+header, .header-content, .hero, .content, .content-images, .content-image, .quote, .cta, .cta-content, footer {
     display: flex;
     margin: 0;
     padding: 0;
@@ -182,15 +182,22 @@ h2 {
 /* || CTA */
 
 .cta {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.cta-content {
     justify-content: space-evenly;
     align-items: center;
     background-color: #3882F6;
-    margin: 80px 250px;
+    /* margin: 80px 250px; */
     /* padding: 40px 150px; */
     border-radius: 10px;
     min-height: 150px;
+    width: 1100px;
     flex-wrap: wrap;
-    flex: 1;
 }
 
 .cta-text {
