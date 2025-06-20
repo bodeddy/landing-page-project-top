@@ -182,11 +182,15 @@ h2 {
 /* || CTA */
 
 .cta {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #3882F6;
     margin: 80px 250px;
-    padding: 40px 150px;
+    /* padding: 40px 150px; */
     border-radius: 10px;
+    min-height: 150px;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .cta-text {
